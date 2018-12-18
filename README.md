@@ -1,6 +1,5 @@
 # html
-
-<!DOCTYPE> declaration to your HTML documents, so that the browser knows what type of document to expect.
+declaration to your HTML documents, so that the browser knows what type of document to expect: <!DOCTYPE> 
 
 <!DOCTYPE html>, html5 doctype is not case sensitive.
 
