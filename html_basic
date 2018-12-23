@@ -12,7 +12,7 @@
             <!-- !DOCTYPE HTML -->
             <tr>
                 <td rowspan="2"><strong>!DOCTYPE HTML</strong></td>
-                <td>Document type declaration.Must be first statement. Tell the browser which type of documentis getting processed.</td>           
+                <td>Document type declaration.Must be first statement. Tell the browser which type of documentis getting processed.html5 doctype is not case sensitive. Either one of these three will work:1) &lt;!DOCTYPE html&gt; 2) &lt;!DOCTYPE HTML&gt; 3) &lt;!doctype html&gt;</td>           
             </tr>
             <tr>
                 <td>Example:<pre> &lt;!DOCTYPE HTML&gt;</pre></td>
