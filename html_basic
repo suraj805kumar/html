@@ -1,0 +1,288 @@
+<!DOCTYPE HTML><!-- document type declaration.Must be first statement. Tell the browser which type of documentis getting processed. -->
+<html lang="en"><!-- root element of the document.lang attribute is optional and tell about the language of the document.Contains head and body -->
+    <head> <!-- contains meta data of the document. -->
+        <title>Sample HTML</title><!-- Define the titel or name of the document.-->
+        <meta charset="UTF-18">
+        
+        
+    </head>
+    
+    <body>
+        <table border="1">
+            <!-- !DOCTYPE HTML -->
+            <tr>
+                <td rowspan="2"><strong>!DOCTYPE HTML</strong></td>
+                <td>Document type declaration.Must be first statement. Tell the browser which type of documentis getting processed.</td>           
+            </tr>
+            <tr>
+                <td>Example:<pre> &lt;!DOCTYPE HTML&gt;</pre></td>
+            </tr>
+            <!-- html -->
+            <tr>
+                <td rowspan="2"><strong>html</strong></td>
+                    <td>
+                        Root element of the document.Contains head and body tags.
+                        <p>Attributes </p>
+                         <p> lang: is optional and tell about the language of the document.</p>
+                    </td>           
+            </tr>
+            <tr>
+                <td>Example:<pre> &lt;html lang = "en" &gt; &lt;/html&gt;</pre></td>
+            </tr>
+            
+            <!-- head -->
+            <tr>
+                <td rowspan="2"><strong>head</strong></td>
+                    <td>
+                        Contains metadata (information about data) of the document. Metadata will not be displayed on the page, but will be machine parsable.
+                        
+                        <p>Below tags can be used under the head </p>
+                         <p> title, meta, link, script, style</p>
+                    </td>           
+            </tr>
+            <tr>
+                <td>Example:<pre> &lt;html lang = "en" &gt; &lt;/html&gt;</pre></td>
+            </tr>
+            
+            <!-- meta -->
+            
+            <tr>
+                <td rowspan="2"><strong>meta</strong></td>
+                    <td>
+                        Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. HTML5 introduced a method to let web designers take control over the viewport (the user's visible area of a web page), through the meta tag.In HTML the <meta> tag has no end tag.
+                    </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example 1 - Define keywords for search engines:</strong></p>
+                    <p>&lt;meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"&gt;</p>
+                    
+                    <p><strong>Example 2 - Define a description of your web page:</strong></p>
+                    <p>&lt;meta name="description" content="Tutorials on HTML"&gt;</p>
+                    
+                    <p><strong>Example 3 - Define the author of a page:</strong></p>
+                    <p>&lt;meta name="author" content="SK"&gt;</p>
+                    
+                    <p><strong>Example 4 - Refresh document every 30 seconds:</strong></p>
+                    <p>&lt;meta http-equiv="refresh" content="30"&gt;</p>
+                    
+                    <p><strong>Example 5 - Setting the viewport to make your website look good on all devices:</strong></p>
+                    <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+                    <p>viewport element gives the browser instructions on how to control the page's dimensions and scaling.The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.</p>
+                    
+                    <p><strong>Example 6 - Specifies the character encoding for the HTML document.</strong></p>
+                    <p>&lt;meta charset="UTF-8"&gt;</p>
+                    
+                </td>
+            </tr>
+            
+            <!-- title -->
+            
+            <tr>
+                <td rowspan="2"><strong>title</strong></td>
+                    <td>
+                        Define document's title or name. This title or name will display in browser's toolbar. The name or title will be used as the page name when the page is added to favorites. The name or title will display as the name of the page in search engine results.
+                    </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example </strong></p>
+                    <p>&lt;title&gt; First Page&lt;/title&gt;</p>                    
+                </td>
+            </tr>
+            
+            <!-- link-->            
+            <tr>
+                <td rowspan="2"><strong>link</strong></td>
+                    <td>
+                        Defines a link between a document and an external resource.
+                        <p><strong>Attributes</strong></p>
+                        <p> rel: Specifies the relationship between the current document and the linked document.</p>
+                        <p> href: Specifies the location of the linked document.</p>
+                        <p> type: Specifies the media type of the linked document.</p>
+                    </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example 1 -  Link to an external style sheet</strong></p>
+                    <p>&lt;link rel="stylesheet" type="text/css" href="/somewhere/style.css"&gt;</p>                    
+                                
+                    <p><strong>Example 2 -  Add a favicon to your website</strong></p>
+                    <p>&lt;link rel="icon" type="image/png" href="/somewhere/myicon.png" /&gt;</p>    
+                </td>
+            </tr>
+            
+            <!-- script-->            
+            <tr>
+                <td rowspan="2"><strong>script</strong></td>
+                    <td>
+                        Element either contains scripting statements, or it points to an external script file through the src attribute.Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content. 
+                        <br/>
+                        For performance reasons, JavaScript is often placed at the bottom of the document, just before the closing <body> tag. This allows the rest of the page to load first, before making the call to the external file.However, not all JavaScript can be placed at the bottom of the document. If another script on the page needs that particular piece of JavaScript at load time, you will need to place the external JavaScript before the script that needs it.
+                        <p><strong>Attributes</strong></p>
+                        <p> src: Specifies the URL of an external script file.</p>
+                        <p> type: Specifies the media type of the script.</p>
+                        <p> charset: Specifies the character encoding used in an external script file.</p>
+                    </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example 1 -  Scripting statements inside script tag</strong></p>
+                    <br/>
+                    <pre>
+    &lt;script&gt;
+        document.getElementById("first").innerHTML = "Hello JavaScript!";
+     &lt;/script&gt;
+                    </pre>                       
+                                
+                    <p><strong>Example 2 -  Including external script file</strong></p>
+                    <p>&lt;script type="text/javascript" src="/somewhere/main.js"&gt;&lt;/script&gt;</p>
+                </td>
+            </tr>
+            
+            <!-- style -->            
+            <tr>
+                <td rowspan="2"><strong>style</strong></td>
+                    <td>
+                        Specify how HTML elements should render in a browser using CSS.Each HTML document can contain multiple style tags.
+                    </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example 1 -  Styling of the document</strong></p>
+                    <br/>
+                    <pre>
+    &lt;style type="text/css"&gt;
+        h1 {color:red;}
+        p {color:blue;} 
+    &lt;/style&gt;
+                    </pre>
+                </td>
+            </tr>
+            
+            <!-- body -->
+            <tr>
+                <td rowspan="2"><strong>body</strong></td>
+                    <td>
+                        Specify the main content of the document.
+                    </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example -  Text inside body</strong></p>
+                    <br/>
+                    &lt;body&gt;Welcome to HTML world &lt;/body&gt;
+                </td>
+            </tr>
+            
+            <!-- Example of html, head, body -->
+            <tr>
+                <td><strong>Example of html, head, body</strong></td>
+                    <td>
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;My Page&lt;/title&gt;
+	&lt;/head&gt;		
+	&lt;body&gt;
+		&lt;h1&gt;Welcome&lt;/h1&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                    </td>
+            </tr>
+            
+            <!-- Heading content -->
+            <tr>
+                <td colspan="2">Heading content</td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <strong>h1, h2, h3, h4, h5, h6</strong>
+                </td>
+                <td>
+                    h1, h2, h3, h4, h5, h6
+                </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example</strong></p>
+                    <br/>
+                    &lt;h1&gt;Welcome to HTML world &lt;/h1&gt;
+                    <br/>
+                    &lt;h2&gt;Welcome to HTML world &lt;/h2&gt;
+                    <br/>
+                    &lt;h3&gt;Welcome to HTML world &lt;/h3&gt;
+                    <br/>
+                    &lt;h4&gt;Welcome to HTML world &lt;/h4&gt;
+                    <br/>
+                    &lt;h5&gt;Welcome to HTML world &lt;/h5&gt;
+                    <br/>
+                    &lt;h6&gt;Welcome to HTML world &lt;/h6&gt;                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2">
+                    <strong>header</strong>
+                </td>
+                <td>
+                    Represents a container for introductory content or a set of navigational links. It contains: one or more heading elements (h1 - h6), logo or icon, authorship information.A document can have several header elements.A header tag cannot be placed within a footer, address or another header element.
+                </td>
+            </tr>
+            <tr>
+                <td><p><strong>Example</strong></p>
+                    <br/>
+
+                     &lt;header&gt;
+                    <br/>
+                        &lt;h1&gt;Important heading here&lt;/h1&gt;
+                    <br/>
+                        &lt;h3&gt; heading here&lt;/h3&gt;
+                    <br/>
+                        &lt;p&gt;Some additional information here.&lt;/p&gt;
+                    <br/>
+                      &lt;/header&gt;             
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2"><strong>Inline Element and Block Element</strong></td>
+                <td>
+                    <p>Block elements take up the full width available on a web page, so next element display in the next line. It starts from the next line and take up full line.
+                        <br/>Common block elements: Paragraphs (&lt;p&gt;), Headers (&lt;h1&gt; through &lt;h6&gt;), Divisions (&lt;div&gt;), Lists and list items (&lt;ol&gt;, &lt;ul&gt;, and &lt;li&gt;), Forms (&lt;form&gt;)
+                    </p>
+                    <p>Inline elements take up as much width as is needed to display the contents of the element, thereby allowing other elements to display in same line. It starts from the available position (it could be same line in preceeding element is inline element otherwise new line) and take up only width.
+                        <br/>Common inline elements: Spans (&lt;span&gt;), Images (&lt;img&gt;), Anchors (&lt;a&gt;)
+                    </p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>Example:</strong></p>
+                    <pre>
+                    
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;span&gt;Start&lt;/span&gt;
+        &lt;div&gt;Hi&lt;/div&gt;
+        &lt;span&gt;Hello&lt;/span&gt;
+        &lt;span&gt;Hello&lt;/span&gt;        
+        &lt;div&gt;Hi Hi&lt;/div&gt;
+        &lt;div&gt;Hi Hi Hi&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                    <p>Display</p>
+                    <pre>
+Start
+Hi
+Hello Hello
+Hi Hi
+Hi Hi Hi
+                    </pre>
+                
+                </td>
+            </tr>
+            
+        </table>
+        
+    </body>
+
+</html>
+    
