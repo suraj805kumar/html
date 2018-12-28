@@ -9,6 +9,14 @@
     
     <body>
         <table border="1">
+			<tr>
+				<td><strong>References:</strong></td>
+				<td>
+					https://www.w3.org/TR/2011/WD-html5-20110525/sections.html#the-article-element
+					<br/>
+					https://www.w3schools.com/tags/
+				</td>
+			</tr>
             <!-- !DOCTYPE HTML -->
             <tr>
                 <td rowspan="2"><strong>!DOCTYPE HTML</strong></td>
@@ -168,6 +176,11 @@
                     &lt;body&gt;Welcome to HTML world &lt;/body&gt;
                 </td>
             </tr>
+			
+			<tr>
+				<td><strong>Flow Content</strong></td>
+				<td><strong>Most elements that are used in the body of documents and applications are categorized as flow content.</strong></td>
+			</tr>
             
             <!-- Example of html, head, body -->
             <tr>
@@ -244,10 +257,18 @@
                 <td rowspan="2"><strong>Inline Element and Block Element</strong></td>
                 <td>
                     <p>Block elements take up the full width available on a web page, so next element display in the next line. It starts from the next line and take up full line.
-                        <br/>Common block elements: Paragraphs (&lt;p&gt;), Headers (&lt;h1&gt; through &lt;h6&gt;), Divisions (&lt;div&gt;), Lists and list items (&lt;ol&gt;, &lt;ul&gt;, and &lt;li&gt;), Forms (&lt;form&gt;)
+                        <br/><strong>Common block elements: </strong>
+						<br/>Paragraphs (&lt;p&gt;)
+						<br/>Headers (&lt;h1&gt; through &lt;h6&gt;)
+						<br/>Divisions (&lt;div&gt;)
+						<br/>Lists and list items (&lt;ol&gt;, &lt;ul&gt;, and &lt;li&gt;)
+						<br/>Forms (&lt;form&gt;)
                     </p>
                     <p>Inline elements take up as much width as is needed to display the contents of the element, thereby allowing other elements to display in same line. It starts from the available position (it could be same line in preceeding element is inline element otherwise new line) and take up only width.
-                        <br/>Common inline elements: Spans (&lt;span&gt;), Images (&lt;img&gt;), Anchors (&lt;a&gt;)
+                        <br/><strong>Common inline elements: </strong>
+						<br/>Spans (&lt;span&gt;)
+						<br/>Images (&lt;img&gt;)
+						<br/>Anchors (&lt;a&gt;)
                     </p>
                 
                 </td>
@@ -268,7 +289,7 @@
     &lt;/body&gt;
 &lt;/html&gt;
                 </pre>
-                    <p>Display</p>
+                    <p><strong>Display:</strong></p>
                     <pre>
 Start
 Hi
@@ -279,6 +300,163 @@ Hi Hi Hi
                 
                 </td>
             </tr>
+			<!-- Phrasing Contents -->
+			<tr>
+				<td>
+					<strong>Phrasing Contents</strong>
+				</td>
+				<td>
+					Phrasing content is the text of the document, as well as elements that mark up that text at the intra-paragraph level. Most elements that are categorized as phrasing content can only contain elements that are themselves categorized as phrasing content, not any flow content. As a general rule, elements whose content model allows any phrasing content should have either at least one descendant text node that is not inter-element whitespace, or at least one descendant element node that is embedded content. 
+				</td>
+			</tr>
+			
+			<!-- strong -->
+			<tr>
+				<td rowspan="2">
+					<strong>strong</strong>				
+				</td>
+				<td>
+					It is a phrase tag. It defines important text with bold font weight.
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<strong>Example</strong>
+					<br/>
+					&lt;strong&gt;Strong text&lt;/strong&gt;
+					<br/>
+					<strong>Display:</strong>
+					<br/>
+					<strong>Strong text</strong>
+				</td>
+			</tr>
+			
+			<!-- em -->
+			<tr>
+				<td rowspan="2">
+					<strong>em</strong>				
+				</td>
+				<td>
+					It is a phrase tag. It renders as emphasized text with italic font style.
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<strong>Example</strong>
+					<br/>
+					&lt;em&gt;Emphasized text&lt;/em&gt;					
+					<br/>
+					<strong>Display:</strong>
+					<br/>
+					<em>Emphasized text</em>
+				</td>
+			</tr>
+			
+			<!-- code -->
+			<tr>
+				<td rowspan="2">
+					<strong>code</strong>				
+				</td>
+				<td>
+					It is a phrase tag. It defines a piece of computer code with monospace font style.
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<strong>Example</strong>
+					<br/>
+					&lt;code&gt;A piece of computer code&lt;/code&gt;					
+					<br/>
+					<strong>Display:</strong>
+					<br/>
+					<code>A piece of computer code</code>
+				</td>
+			</tr>
+			
+			<!-- samp -->
+			<tr>
+				<td rowspan="2">
+					<strong>samp</strong>				
+				</td>
+				<td>
+					It is a phrase tag.It defines sample output from a computer program with monospace font style.
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<strong>Example</strong>
+					<br/>
+					&lt;samp&gt;Sample output from a computer program&lt;/samp&gt;					
+					<br/>
+					<strong>Display:</strong>
+					<br/>
+					<samp>Sample output from a computer program</samp>
+				</td>
+			</tr>
+			
+			<!-- kbd -->
+			<tr>
+				<td rowspan="2">
+					<strong>kbd</strong>				
+				</td>
+				<td>
+					It is a phrase tag.It defines keyboard input with monospace font style.
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<strong>Example</strong>
+					<br/>
+					&lt;kbd&gt;Keyboard input&lt;/kbd&gt;					
+					<br/>
+					<strong>Display:</strong>
+					<br/>
+					<kbd>Keyboard input</kbd>
+				</td>
+			</tr>
+			
+			<!-- var -->
+			<tr>
+				<td rowspan="2">
+					<strong>var</strong>				
+				</td>
+				<td>
+					It is a phrase tag.It defines a variable with italic font style.
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<strong>Example</strong>
+					<br/>
+					&lt;var&gt;Variable&lt;/var&gt;					
+					<br/>
+					<strong>Display:</strong>
+					<br/>
+					<var>Variable</var>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><strong>Sectioning content</strong></td>
+				<td><strong>Sectioning content is content that defines the scope of headings and footers.<strong></td>			
+			</tr>
+			
+			<!-- article -->
+			<tr>
+				<td rowspan="2">
+					<strong>article</strong>				
+				</td>
+				<td>
+					
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					
+				</td>
+			</tr>
+			
+			
             
         </table>
         
